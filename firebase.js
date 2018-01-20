@@ -12086,7 +12086,7 @@ firebase.SDK_VERSION = "3.7.2";
         var a = this;
         if (this.b) return X(this, this.b);
         this.b = null;
-        return navigator.serviceWorker.register("/ServiceWorkerPush/firebase-messaging-sw.js", {scope: "/firebase-cloud-messaging-push-scope"}).catch(function (b) {
+        return navigator.serviceWorker.register("/ServiceWorkerPush/firebase-messaging-sw.js", {scope: "/ServiceWorkerPush/firebase-cloud-messaging-push-scope"}).catch(function (b) {
             throw a.a.create("failed-serviceworker-registration", {browserErrorMessage: b.message});
         }).then(function (b) {
             return X(a, b).then(function () {
